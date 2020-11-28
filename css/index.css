@@ -1,0 +1,167 @@
+/* global */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.clear {
+  clear: both;
+}
+
+/* header */
+.header img {
+  width: 250px;
+}
+
+/* Bước 1: xoá dấu tròn đen của danh sách */
+.header ul {
+  list-style: none;
+  background-color: black;
+  padding: 20px;
+}
+
+/* Bước 2: xoá đường gạch của thẻ a (xoá gạch đích và đổi màu chữ */
+.header a {
+  text-decoration: none;
+  color: white;
+}
+
+/* Bước 3: đổi tính chất của thẻ li chuyển từ block qua inline */
+/* Bước 4: thêm khoản cách */
+.header li {
+  display: inline;
+  margin: 10px;
+  padding: 30px;
+  /* border: 5px solid red;  */
+}
+
+/* Carousel */
+.carousel {
+  background-image: url(../img/slider_1.jpg);
+  height: 29.125rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+/* Intro */
+.intro {
+  padding: 10px;
+}
+.intro__content1 span {
+  color: red;
+  font-weight: bold;
+}
+.intro__left,
+.intro__right {
+  float: left;
+  width: 50%;
+}
+.intro__item {
+  float: left;
+  padding: 10px;
+}
+/* .intro__item1 {
+  width: 100%;
+} */
+.intro__item2 {
+  width: 100%;
+}
+.intro__item img {
+  width: 100%;
+  display: block;
+}
+
+/* Products */
+.products h2 {
+  text-align: center;
+  line-height: 10px;
+}
+.products__item {
+  float: left;
+  width: 25%;
+  /* margin: (top bot) (left right) */
+  /* margin: 0 20px; */
+  padding: 2.75rem 20px;
+}
+.products__item h3,
+p {
+  padding: 10px;
+}
+
+.products__item img {
+  /* set width img so với thằng cha products__item */
+  width: 100%;
+}
+.products__item button {
+  color: white;
+  background-color: rgb(216, 23, 23);
+
+  border: 1px solid rgb(216, 23, 23);
+  border-radius: 10%;
+  padding: 10px;
+}
+
+/* Banner */
+.banner {
+  background-image: url(../img/nature.jpg);
+  height: 24.375rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  margin: 3.125rem 0;
+}
+
+.banner__circle {
+  position: absolute;
+  /* position:top, left, right, bottom */
+  top: 7px;
+  left: 17.1875rem;
+  width: 15rem;
+  height: 15rem;
+  /* rgba */
+  background-color: rgba(250, 0, 0, 0.5);
+  border-radius: 50%;
+  text-align: center;
+  color: white;
+  /* opacity: làm mờ làm trog suốt thẻ(0->1) */
+  /* 0.1,0.2,0.3,... */
+  /* opacity: 0.7; */
+  line-height: 28px;
+}
+
+/* relative:vị trí thẻ cha */
+/* absolute-(top,bot,left,right): vị trí thẻ con. Gần bên nào khai bên đó  */
+.banner__circle p {
+  margin: 0;
+}
+.banner__circle p:nth-child(1) {
+  font-size: 32px;
+  margin-top: 36px;
+}
+.banner__circle p:nth-child(2) {
+  font-size: 4.375rem;
+}
+
+/* Services */
+.services {
+  padding: 0 8.125rem;
+}
+
+.services__content {
+  display: flex;
+  /* margin: 0 2.625rem; */
+  text-align: center;
+}
+.services__item i {
+  font-size: 50px;
+}
+/* Footer */
+.footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 1.875rem;
+}
